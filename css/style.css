@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+}
+html,body{
+    font-family: MessinaSans,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+.black{
+    background: #000;
+    color: #fff !important;
+}
+.heading img{
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+ul{
+    margin-top: 20px;
+    list-style: none;
+}
+ul.int{
+    padding: 50px auto;
+    max-height:  30px;
+    overflow: hidden;
+}
+.searchB{
+    cursor: pointer;
+    position: absolute;
+    text-align: center;
+    border-left: 1px solid #aaa;
+    top: 0;
+    right: 0;
+    width: 70px;
+    height: 70px;
+    transition: .5s all;
+}
+.searchB:hover{
+    background: rgba(229,99,136, 1);
+    transition: .5s all;
+}
+.searchB:hover i {
+    color: #fff;
+}
+.searchB i{
+    margin: 20px auto;
+    font-size: xx-large;
+    color: rgba(229,99,136, 1);
+}
+section{
+    display: none;
+    margin-top: 100px;
+    padding-top: 100px;
+    font-size: xx-large;
+}
+.spot{
+    border-left: 1px solid #aaa;
+    position: absolute;
+    padding: 10px 0px;
+    right: 0;
+    width: 70px;
+    top: 70px;
+    bottom: 0;
+}
+.intent{
+    background: #fff;
+    position: relative;
+    padding-top: 25px;
+    width: 350px;
+    border: 1px solid #aaa;
+    height: 100px;
+}
+.intent i{
+    position: absolute;
+    left: 10px;
+    top:32px;
+    color:rgba(229,99,136, 1);
+}
+.spot i{
+    color: blue;
+    margin-left: 20px;
+    font-size: 30px;
+}
+.spot p{
+    margin-top: 200px;
+    width: 100%;
+    -webkit-transform: rotate(-90deg);
+}
+input{
+    outline: none !important;
+    border: none;
+    margin-left: 60px;
+    color: #aaa;
+}
+input:focus{
+    color: #000;
+}
+ul li{
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .5s all;
+    line-height: 40px;
+}
+.no_teme{
+    float: right;
+}
+.no_teme:hover{
+border: none;
+}
+.uls{
+    position: absolute;
+    display: none;
+    right: 0px;
+    top: 0;
+    float: right;
+}
+.abs{
+    width: 200px;
+    background: #aaa;
+    margin-top: 10px;
+}
+.abs li{
+    display: block;
+
+}
+ul li:hover{
+    border-bottom: 2px solid rgba(229,99,136, 1);
+    transition: .5s all;
+}
+nav{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 0 23% 0 15%;
+    margin: 0;
+    height: 70px;
+    border-bottom: 1px solid #aaa;
+}
+.fa-arrow-down{
+    color: rgba(229,99,136, 1);
+}
+@media screen and (max-width: 480px) {
+
+
+}
+
+@media screen and (max-width: 1177px) {
+    .uls{
+        display: block;
+    }
+    
+
+}
