@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 html,body{
-    font-family: MessinaSans,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'PT Sans',MessinaSans,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: medium;
     color: black;
     margin: 0;
