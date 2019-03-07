@@ -3,12 +3,21 @@ $(document).ready(function(){
     $(".searchB").on("click", function(){
         $("body").toggleClass('black');
         if(ele){
-            $("section").fadeIn(1000);
+            $("#sec").fadeIn(1000);
             ele = !ele;
         }
         else{
-            $("section").fadeOut();
+            $("#sec").fadeOut();
             ele = !ele;
         }
+    });
+
+    $('.no_teme').hover(function(){
+        $('.abs').fadeToggle();
+    });
+    $('.menus').click(function(){
+
+        $(this).toggleClass('menuClick');
+        $("#two").fadeToggle();
     })
 })
