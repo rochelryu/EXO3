@@ -25,7 +25,7 @@ ul{
 }
 ul.int{
     padding: 50px auto;
-    max-height:  30px;
+    max-height:  50px;
     overflow: hidden;
 }
 .searchB{
@@ -40,7 +40,7 @@ ul.int{
     transition: .5s all;
 }
 .searchB:hover{
-    background: rgba(229,99,136, 1);
+    background: rgb(133,0,32);
     transition: .5s all;
 }
 .searchB:hover i {
@@ -49,7 +49,7 @@ ul.int{
 .searchB i{
     margin: 20px auto;
     font-size: xx-large;
-    color: rgba(229,99,136, 1);
+    color: rgb(133,0,32);
 }
 section{
     display: none;
@@ -78,7 +78,7 @@ section{
     position: absolute;
     left: 10px;
     top:32px;
-    color:rgba(229,99,136, 1);
+    color:rgb(133,0,32);
 }
 .spot i{
     color: blue;
@@ -91,7 +91,7 @@ section{
     -webkit-transform: rotate(-90deg);
 }
 input{
-    outline: none !important;
+   width:170px; outline: none !important;
     border: none;
     margin-left: 60px;
     color: #aaa;
@@ -108,8 +108,65 @@ ul li{
     transition: .5s all;
     line-height: 40px;
 }
+#two li{
+    width: 37%;
+    border: none;
+}
+#two li a{
+    border-bottom: 1px solid rgba(229,99,136, 1) !important;
+}
+#two li:hover{
+    border-bottom: none;
+    color: rgb(133,0,32);
+}
+.menus{
+    margin: 0;
+    padding: 10px 5px !important;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    bottom: 0;
+}
+.menuClick{
+    background: #000 !important;
+    color: #fff !important;
+}
+.menus li i{
+    color: #aa4;
+}
+.menus li:hover{
+    border-bottom: none !important; 
+}
 .no_teme{
-    float: right;
+    min-width: 200px;
+}
+#two span{
+    color: #777;
+    display: block;
+}
+#two button{
+    outline: none;
+    background: none;
+    height: 50px;
+    color: #fff;
+    border: 1px solid #E57373;
+    transition: .5s all;
+}
+#two button:hover{
+    background: #E57373;
+    color: #000;
+    border: none; 
+}
+a{ margin: 2px 5px; color: #fff !important; text-decoration: underline; }
+#two{
+    padding-left: 40px;
+    margin-top: 70px;
+    font-size: medium !important;
+    background: rgb(133,0,32);
+    color: white;
+    min-height: 500px;
 }
 .no_teme:hover{
 border: none;
@@ -122,16 +179,23 @@ border: none;
     float: right;
 }
 .abs{
-    width: 200px;
-    background: #aaa;
+    display: none;
+    min-width: 200px;
+    border-top: 2px solid rgb(133,0,32);
+    background: #fff;
+    box-shadow: 0 0 5px #aaa;
     margin-top: 10px;
 }
 .abs li{
-    display: block;
+    display: none;
+}
+.abs li:hover{
+    border-bottom: none !important;
+    color: rgb(133,0,32);
 
 }
 ul li:hover{
-    border-bottom: 2px solid rgba(229,99,136, 1);
+    border-bottom: 2px solid rgb(133,0,32);
     transition: .5s all;
 }
 nav{
@@ -145,17 +209,65 @@ nav{
     border-bottom: 1px solid #aaa;
 }
 .fa-arrow-down{
-    color: rgba(229,99,136, 1);
+    color: rgb(133,0,32);
 }
-@media screen and (max-width: 480px) {
-
+@media screen and (max-width: 631px) {
+    .menus{
+        display: block !important;
+    }
+    .uls{
+        display: none;
+    }
+    .int{
+        display: none;
+    }
+    .searchB{
+        display: none;
+    }
+    .no_teme{
+        background:#444;
+        margin-top: -15px;
+    }
+}
+@media screen and (min-width: 632px) and (max-width: 757px) {
+    .abs .two,.abs .one,.abs .three,.abs .four {
+        display: block;
+    }
+    .uls{
+        display: block;
+    }
+    nav{
+        padding: 0 28% 0 15%;
+    }
+}
+@media screen and (min-width: 758px) and (max-width: 862px)  {
+    .abs .two,.abs .one,.abs .three {
+        display: block;
+    }
+    .uls{
+        display: block;
+    }
 
 }
-
-@media screen and (max-width: 1177px) {
+@media screen and (min-width: 863px) and (max-width: 1017px)  {
+    .abs .two,.abs .one {
+        display: block;
+    }
+    .uls{
+        display: block;
+    }
+}
+@media screen and (min-width: 1018px) and (max-width: 1177px) {
+    .abs .one{
+        display: block;
+    }
     .uls{
         display: block;
     }
     
+
+}
+@media screen and (max-width: 1177px) {
+
 
 }
