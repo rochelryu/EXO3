@@ -1,8 +1,10 @@
 $(document).ready(function(){
     var ele = true;
+    var ef = true;
     $(".searchB").on("click", function(){
         $("body").toggleClass('black');
         if(ele){
+            $("#two").fadeOut()
             $("#sec").fadeIn(1000);
             ele = !ele;
         }
@@ -16,8 +18,18 @@ $(document).ready(function(){
         $('.abs').fadeToggle();
     });
     $('.menus').click(function(){
-
-        $(this).toggleClass('menuClick');
-        $("#two").fadeToggle();
+        console.log(ef)
+        if(ef){
+            $(this).html('<li>Close<i class="fa fa-arrow-up"></i></li>');
+            $(this).toggleClass('menuClick');
+            $("#two").fadeToggle();
+            ef = !ef;
+        }
+        else{
+            $(this).html('<li>Menu<i class="fa fa-arrow-down"></i></li>');
+            $(this).toggleClass('menuClick');
+            $("#two").fadeToggle();
+            ef = !ef;
+        }
     })
 })

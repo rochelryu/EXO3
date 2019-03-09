@@ -166,7 +166,7 @@ a{ margin: 2px 5px; color: #fff !important; text-decoration: underline; }
     font-size: medium !important;
     background: rgb(133,0,32);
     color: white;
-    min-height: 500px;
+    min-height: 800px;
 }
 .no_teme:hover{
 border: none;
@@ -227,6 +227,11 @@ nav{
     .no_teme{
         background:#444;
         margin-top: -15px;
+    }
+}
+@media screen and (min-width: 632px) {
+    #two{
+        display: none !important;
     }
 }
 @media screen and (min-width: 632px) and (max-width: 757px) {
