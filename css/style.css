@@ -203,7 +203,7 @@ nav{
     left: 0;
     right: 0;
     top: 0;
-    padding: 0 23% 0 15%;
+    padding: 0 20% 0 13%;
     margin: 0;
     height: 70px;
     border-bottom: 1px solid #aaa;
@@ -234,7 +234,18 @@ nav{
         display: none !important;
     }
 }
-@media screen and (min-width: 632px) and (max-width: 757px) {
+@media screen and (min-width: 632px) and (max-width: 837px) {
+    .abs .two,.abs .one,.abs .three,.abs .four,.abs .five {
+        display: block;
+    }
+    .uls{
+        display: block;
+    }
+    nav{
+        padding: 0 28% 0 15%;
+    }
+}
+@media screen and (min-width: 837px) and (max-width: 924px) {
     .abs .two,.abs .one,.abs .three,.abs .four {
         display: block;
     }
@@ -245,24 +256,30 @@ nav{
         padding: 0 28% 0 15%;
     }
 }
-@media screen and (min-width: 758px) and (max-width: 862px)  {
+@media screen and (min-width: 925px) and (max-width: 985px)  {
     .abs .two,.abs .one,.abs .three {
         display: block;
     }
     .uls{
         display: block;
     }
+    nav{
+        padding: 0 22% 0 14%;
+    }
 
 }
-@media screen and (min-width: 863px) and (max-width: 1017px)  {
+@media screen and (min-width: 986px) and (max-width: 1085px)  {
     .abs .two,.abs .one {
         display: block;
     }
     .uls{
         display: block;
     }
+    nav{
+        padding: 0 21% 0 13%;
+    }
 }
-@media screen and (min-width: 1018px) and (max-width: 1177px) {
+@media screen and (min-width: 1086px) and (max-width: 1182px) {
     .abs .one{
         display: block;
     }
